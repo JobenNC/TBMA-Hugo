@@ -1,0 +1,225 @@
+
+
+//$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+//$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+//$font-family-base:            $font-family-sans-serif !default;
+
+//$font-family-base: "Avenir";
+$font-family-base: "Nunito";
+@import 'bootstrap';
+
+$colorOne: blue;
+$periwinkle: #BDC1E2;
+$seaFoam: #96C8B7;
+$bodyCopyGray: #5e6268;
+$siteBackground: white;
+
+body {
+    /*font-family: "Times New Roman";*/
+    /*color: $bodyCopyGray;*/
+    color: gray;
+    height: 100%;
+}
+
+.badgeImage {
+}
+
+.socialMediaImage {
+}
+
+.border-periwinkle {
+  border-color: $periwinkle !important;
+}
+
+#somethingElse {
+    color: $periwinkle;
+}
+
+#siteHeader
+{
+    //color: $seaFoam;
+    //color: $bodyCopyGray;
+    //background-color: $periwinkle;
+    background-color: $siteBackground;
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        font-family: "Open Sans Condensed";
+        color: $seaFoam;
+        a {
+            color: $seaFoam;
+        }
+    }
+
+    h4, h5 {
+        color: gray;
+        a {
+            color: gray;
+        }
+    }
+}
+
+.seaFoamContact
+{
+    color: $seaFoam;
+    /*color: rgb(187, 225, 216);*/
+    text-decoration: none;
+}
+
+#fakePhoto
+{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+
+#offsetImagesTest
+{
+    display: block;
+    height: 900px;
+}
+
+#siteNav 
+{
+}
+
+#seaFoamFooter
+{
+    background-color: rgb(187, 225, 216);
+}
+
+#communityPlaceHolder
+{
+    min-height: 300px;
+}
+
+#copyright
+{
+}
+
+#homeBadges
+{
+}
+
+#contactButton
+{
+    background-color: $periwinkle;
+    border: none;
+}
+
+#pullUpColumn
+{
+    margin-top: -50px;
+}
+
+.pageHeader
+{
+    color: $periwinkle;
+}
+
+.fullQuote
+{
+    color: $seaFoam;
+}
+
+.quoteAndPic
+{
+}
+
+.question
+{
+    color: $seaFoam;
+}
+
+.answer
+{
+}
+
+.imgTest
+{
+    max-width: 50%;
+    height: auto;
+    margin-right: 0px;
+}
+
+.textTest
+{
+}
+
+.floatImage
+{
+    width: 50%;
+}
+
+.floatText
+{
+    line-height: 1.6;
+}
+
+.ovationPic
+{
+}
+
+.fancyStart
+{
+    color:black;
+    font-size: 19px;
+}
+
+.photoCredit
+{
+    font-size: 11px;
+}
+
+
+@include media-breakpoint-up(md)
+{
+    .floatText
+    {
+        width: 50%;
+    }
+    .photoCredit
+    {
+        font-size: 15px;
+    }
+}
+
+@include media-breakpoint-up(lg)
+{
+    .growText
+    {
+        font-size: 25pt;
+    }
+
+    .floatText
+    {
+        font-size: 15pt;
+    }
+}
+
+@include media-breakpoint-up(xl)
+{
+    .growText
+    {
+        font-size: 30pt;
+    }
+
+    .floatText
+    {
+        font-size: 20pt;
+    }
+}
+
+//TODO: Consider pulling site bakcground-color higher
+//TODO: Break into multiple style sheets/per page
+
+//@include media-breakpoint-up(md)
+//{
+//    h1
+//    {
+//        color: green;
+//    }
+//}
+
+//sass -I ./node_modules/bootstrap/scss --watch css/styles.scss
