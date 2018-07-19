@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://theresaburden.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Theresa Burden Makeup Artistry"
+uglyurls = true
