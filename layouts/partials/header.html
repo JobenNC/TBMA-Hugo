@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+            {{ .Params.styleSheets | safeHTML }}
+
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+            <title>{{ .Title }}</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="icon" type="image/png" href="img/Icons/favicon.png" />
+            <meta name="description" content="{{ .Params.description }}" />
+            <meta name="keywords" content="theresa burden, raleigh makeup artist, cary makeup artist, makeup artist, art, artist, wedding, drawing, bridal, raleigh, cary, north carolina, nc, apex, durham, triangle" />
+            <meta name="robots" content="index,follow" />
+            <meta name="author" content="Theresa Burden, Joseph Jarriel" />
+            <meta property="og:image" content="img/homepage/UltraViolet-Wedding-2-cropped.jpg" />
+            <meta property="og:description" content="{{ printf "%s" $.Params.description }}" />
+            <meta property="og:url"content="{{ .Permalink }}" />
+            <meta property="og:title" content="{{ .Title }}" />
+
+    </head>
+    <body>
+        <div class="mb-5">
+        </div>
+
+        <div class="container text-center border border-periwinkle border-top-0 border-right-0 border-left-0 mb-5" id="siteHeader">
+            <!-- Different sized headers for mobile -->
+            <h1 class="display-4 d-none d-sm-block font-weight-bold"><a href="./">THERESA BURDEN</a></h1>
+            <h1 class="display-5 d-sm-none font-weight-bold"><a href="./">THERESA BURDEN</a></h1>
+            <h4 class="display-5 d-none d-sm-block mb-5"><a href="./">makeup artistry</a></h4>
+            <h4 class="display-5 d-sm-none mb-5"><a href="./">makeup artistry</a></h4>
+
+            <!--TODO: https://stackoverflow.com/questions/21465618/is-it-possible-to-use-twitter-bootstraps-navbar-fix-to-top-only-on-mobile-devic -->
+            <nav class="navbar navbar-expand-md bg-white navbar-light" id="siteNav">
+                <!-- <a class="navbar-brand d-md-none" href="#">Home</a> -->
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#collapsibleNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNav">
+                    <ul class="navbar-nav container justify-content-between">
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">GALLERY</a>
+                        </li>
+                        -->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">GALLERIES</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./bridal.html">BRIDAL</a>
+                                <a class="dropdown-item" href="./beauty.html">BEAUTY</a>
+                                <a class="dropdown-item" href="./grooming.html">GROOMING</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reviews.html">REVIEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQ</a>
+                        </li>
+
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+                        -->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./the-artist.html">THE ARTIST</a>
+                                <a class="dropdown-item" href="./education.html">EDUCATION</a>
+                                <a class="dropdown-item" href="./features.html">FEATURES</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
