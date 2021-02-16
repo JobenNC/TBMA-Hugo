@@ -1,0 +1,29 @@
+{
+  "name": "theresa-burden-makeup-artistry",
+  "version": "1.0.0",
+  "description": "Theresa's personal website",
+  "main": "js/index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "fs": "0.0.1-security",
+    "jquery": "^3.2.1",
+    "lazyload": "^2.0.0-beta.2",
+    "magnific-popup": "^1.1.0",
+    "mustache": "^2.3.0",
+    "popper.js": "^1.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JobenNC/Theresa-Burden-Makeup-Artistry.git"
+  },
+  "author": "Joseph Jarriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JobenNC/Theresa-Burden-Makeup-Artistry/issues"
+  },
+  "homepage": "https://github.com/JobenNC/Theresa-Burden-Makeup-Artistry#readme"
+}
