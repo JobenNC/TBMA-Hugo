@@ -237,6 +237,27 @@ body {
     }
 }
 
+.btn-primary {
+    @include button-variant($seaFoam, darken($seaFoam, 7.5%), darken($seaFoam, 10%), lighten($seaFoam,5%), lighten($seaFoam, 10%), darken($seaFoam,30%));
+}
+
+//replace li bullets w/ unicode
+
+
+//TODO:
+
+// - https://love2dev.com/blog/customize-bulleted-list/
+.diamondList {
+    list-style: none;
+
+    li:before {
+    content: "\25C7";
+    margin-left: -20px;
+    margin-right: 10px;
+    }
+}
+
+
 //TODO: Consider pulling site bakcground-color higher
 //TODO: Break into multiple style sheets/per page
 
